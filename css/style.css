@@ -1,0 +1,103 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body,
+input,
+button {
+  font-family: "VT323", monospace;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.6rem;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-image: url("../img/background.jpg");
+  background-position: center;
+  background-size: cover;
+  filter: blur(8px);
+}
+
+.shadow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 30%;
+  z-index: 2;
+}
+
+h1, h2 {
+  color: white;
+}
+
+h1 {
+  font-size: 8rem;
+}
+
+h2 {
+  font-size: 4.6rem;
+  padding: 1em;
+}
+
+input {
+  padding: 0.5em;
+  margin: 0.5em 0;
+  font-size: 3rem;
+  border-radius: 25px;
+  outline: none;
+}
+
+button {
+  margin: 1em 0;
+  padding: 0.5em 2em;
+  font-size: 2.4rem;
+  border-radius: 25px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background-color: rgb(228, 58, 58);
+}
+
+.login-error, .password-error {
+  font-size: 3rem;
+  color: red;
+}
+
+.created {
+  font-size: 3rem;
+  color: greenyellow;
+}/*# sourceMappingURL=style.css.map */
